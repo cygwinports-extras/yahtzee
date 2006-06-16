@@ -1,0 +1,50 @@
+yahtzee
+-------------------------------------------
+Yahtzee(TM) console game
+
+Runtime requirements:
+  cygwin-1.5.19-4
+  libncurses8-5.5-2
+
+Build requirements:
+  cygwin-1.5.19-4
+  binutils-20050610-1
+  cygport-0.1.92-1
+  gcc-core-3.4.4-1
+  make-3.80-1
+
+Canonical download:
+  ftp://ftp.ac-grenoble.fr/ge/educational_games/
+
+-------------------------------------------
+
+Build instructions:
+  unpack yahtzee-1.04-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./yahtzee-1.04-X.cygport all
+
+This will create:
+  /usr/src/yahtzee-1.04-X-src.tar.bz2
+  /usr/src/yahtzee-1.04-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/bin/yahtzee.exe
+  /usr/share/doc/Cygwin/yahtzee-1.04.README
+  /usr/share/doc/yahtzee-1.04/README
+
+------------------
+
+Port Notes:
+
+----- version 1.04-1 -----
+Initial release for Cygwin.
+
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/

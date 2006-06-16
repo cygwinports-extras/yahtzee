@@ -1,0 +1,15 @@
+DESCRIPTION="Console Yahtzee(TM) game"
+SRC_URI="ftp://ftp.ac-grenoble.fr/ge/educational_games/${PN}_sbi-${PV}.tgz"
+SRC_DIR="${PN}_sbi-${PV}"
+
+src_compile() {
+	lndirs
+	cd ${B}
+	cygmake
+}
+
+src_install() {
+	cd ${B}
+	dobin yahtzee.exe
+	newdoc 00README.new README
+}
